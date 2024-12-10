@@ -1,0 +1,36 @@
+# 编译输出
+/bin/
+/dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 测试文件
+*.test
+*.tmp
+
+# 依赖目录
+/vendor/
+
+# IDE 文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 配置文件
+/configs/*.json
+!/configs/*.example.json
+
+# 核心程序
+/core/*
+!/core/.gitkeep 

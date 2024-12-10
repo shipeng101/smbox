@@ -1,0 +1,26 @@
+name: Build Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      # 构建多平台二进制
+      - name: Build Binaries
+        run: |
+          # linux/amd64
+          # linux/arm64
+          # darwin/amd64
+          # darwin/arm64
+          # windows/amd64
+          
+      # 构建Docker镜像
+      - name: Build Docker
+        run: |
+          docker buildx build --platform linux/amd64,linux/arm64 ... 
